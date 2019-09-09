@@ -75,5 +75,28 @@
         * 自定义类 AppClassLoader classpath
         * 类加载的主要步骤（装载 链接 初始化）
 * 容器
+    * Java Collection框架是什么？（一个集合接口，包含了List、Queue、Set、Stack）
+    * 什么是迭代器？（是一个对象，提供一种病访问容器对象中各个元素又不暴露该对象内部细节的方法 CocurrentModificationException）
+    * ArrayList、Vector、LinkedList区别？（线程是否安全，底层实现机制）
+    * HashMap、Hashtable、TreeMap、WeakHashMap有什么区别？（允许null、线程安全与否、实现机制）
+    * 用自定义类作为HashMap或Hashtable的key时有哪些需要注意的？（key-hashCode-h1-equals 替换或不替换 对象与对象内容的区别）
+    * Collection与Collections的区别与联系（Collections是个包装类，里面提供了各种静态方法）
 * 多线程
+    * 什么是线程，它与进程有什么区别，为什么要使用多线程？（线程是程序代码的执行单元，进程是一段正在执行的程序）
+    * 同步和异步有什么区别？（同步保证数据安全，异步加快效率）
+    * 如何实现Java多线程？（ 有三种方法，通过写代码去实现吧）
+    * run（）方法和start()方法有什么区别（start()启动-就绪状态-run()-运行状态-运行结束-结束状态 直接调run不会同步）
+    * 多线程同步实现的方法有哪些（sychronized wait()与notify Lock()）
+    * sleep()方法与wait方法有什么区别（sleep 线程自身控制 wait线程间通信 ）
+    * 终止线程的方法（Thread.stop与suspend）
+    * sychronied与Lock有什么区别（用法不一；性能不一；锁机制不一样）
+    * 什么是守护线程（服务进程、精灵线程、后台服务，典型的GC）
+    * join（）方法的作用（调用完run，调用join方法）
 * java数据库操作
+    * 如何通过JDBC访问数据库？
+    * JDBC处理事物采用什么方法？
+    * Class.forName()作用（把类加载到内存）
+    * getString()与getObject(getString一次读取到内存中，getObject从数据库中取)
+    * 使用JDBC需要注意哪些问题？（1.建立连接 2.关闭连接）
+    * JDO、DAO(Java Data Object Java数据对象   Dao Data Access Object数据访问接口层)
+    * JDBC与Hibernate(写入到配置文件中)
